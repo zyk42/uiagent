@@ -1,0 +1,50 @@
+{
+ "samples": 356,
+ "ref_unparseable_skipped": 5,
+ "parse_ok_rate": 98.88,
+ "L0_exact": 29.63,
+ "L1_equivalent": 61.54,
+ "L2_decision": 78.92,
+ "L3_drift": 21.08,
+ "coord_dist_median": 4.47,
+ "coord_dist_p90": 257.94,
+ "verb_drift_top": [
+  [
+   "Type->Tap",
+   7
+  ],
+  [
+   "Stop->Tap",
+   5
+  ],
+  [
+   "Tap->Shortcut",
+   4
+  ],
+  [
+   "Tap->Double Tap",
+   4
+  ],
+  [
+   "Tap->Right Tap",
+   4
+  ]
+ ],
+ "per_platform": {
+  "win": {
+   "n": 119,
+   "L0": 34.75,
+   "L1_cum": 66.1
+  },
+  "mac": {
+   "n": 118,
+   "L0": 27.59,
+   "L1_cum": 58.62
+  },
+  "ubuntu": {
+   "n": 119,
+   "L0": 26.5,
+   "L1_cum": 59.83
+  }
+ }
+}

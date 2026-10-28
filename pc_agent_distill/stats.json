@@ -1,0 +1,20 @@
+{
+  "trajectories": 5000,
+  "samples": 81353,
+  "action_stats": {
+    "tap": 53877,
+    "type": 7435,
+    "moveTo": 5355,
+    "stop": 5006,
+    "drag": 3125,
+    "double_tap": 2926,
+    "press": 2452,
+    "hotkey": 2420,
+    "right_tap": 2008,
+    "scroll": 1864,
+    "empty_step": 1111,
+    "unknown:computer.wait": 515,
+    "triple_tap": 240,
+    "type_empty_dropped": 1
+  }
+}

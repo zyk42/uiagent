@@ -1,0 +1,16 @@
+=== gptq-w4a16 ===
+GEN: {"id":"4c735f606bdf44e3860fc89789647096","object":"chat.completion","created":1792051736,"model":"default","choices":[{"index":0,"message":{"role":"assistant","content":"hi","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt_to
+gptq-w4a16 done at 2026年 10月 15日 星期四 16:09:09 CST
+=== awq-w4a16 ===
+GEN: {"id":"7203eaa8074149ad9b2bb33b67c2d3f1","object":"chat.completion","created":1792051820,"model":"default","choices":[{"index":0,"message":{"role":"assistant","content":"hello","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt
+awq-w4a16 done at 2026年 10月 15日 星期四 16:10:33 CST
+=== mxfp4-w4a4 ===
+SERVER_DIED
+mxfp4-w4a4 done at 2026年 10月 15日 星期四 16:11:06 CST
+=== nvfp4-w4a4 ===
+SERVER_DIED
+nvfp4-w4a4 done at 2026年 10月 15日 星期四 16:11:49 CST
+=== smoothquant-w8a8 ===
+GEN: {"id":"8243ebdf937543fdbc0e0ac8c9d81096","object":"chat.completion","created":1792052001,"model":"default","choices":[{"index":0,"message":{"role":"assistant","content":"hello","reasoning_content":null,"tool_calls":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}],"usage":{"prompt
+smoothquant-w8a8 done at 2026年 10月 15日 星期四 16:13:34 CST
+SMOKE ALL DONE

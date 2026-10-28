@@ -1,0 +1,8 @@
+{
+  "model": "gptq-nvfp4-skip3",
+  "deploymentId": "s-20260902173040-8ly5q-3h3xu",
+  "status": "broken_output",
+  "reason": "服务可启动、请求 200, 但输出全为乱码('!!!!!'), parse_ok=0/360。config 与可正常工作的 gptq-nvfp4 唯一差异为 ignore 列表 117→138(多跳过 3 层 transformer 的 21 个 Linear)。判断: sglang 0.5.20-dflash2 镜像的 nvfp4 混合精度(中段层 bf16)路径不兼容",
+  "press_note": "压测数据虽已采集(press/results/gptq-nvfp4-skip3/), 但模型输出无效, 速度数字仅供参考栈行为",
+  "date": "2026-10-27"
+}

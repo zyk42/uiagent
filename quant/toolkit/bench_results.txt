@@ -1,0 +1,33 @@
+=== gptq-w4a16 ===
+[gptq-w4a16] === single-stream latency ===
+[gptq-w4a16] sample0 (~2k tok): TTFT=1.71s  decode=74.56 tok/s
+[gptq-w4a16] sample1 (~4k tok): TTFT=2.79s  decode=73.21 tok/s
+[gptq-w4a16] sample2 (~8k tok): TTFT=4.70s  decode=72.56 tok/s
+[gptq-w4a16] === throughput (16 concurrent) ===
+[gptq-w4a16] throughput: 38.42 tok/s (16 conc, 1908 tokens in 49.66s)
+BENCH_RESULT {"model": "gptq-w4a16", "ttft": ["1.71", "2.79", "4.70"], "decode_tps": ["74.56", "73.21", "72.56"], "throughput_16c": "38.42"}
+=== awq-w4a16 ===
+[awq-w4a16] === single-stream latency ===
+[awq-w4a16] sample0 (~2k tok): TTFT=1.71s  decode=74.06 tok/s
+[awq-w4a16] sample1 (~4k tok): TTFT=2.79s  decode=73.88 tok/s
+[awq-w4a16] sample2 (~8k tok): TTFT=4.70s  decode=72.41 tok/s
+[awq-w4a16] === throughput (16 concurrent) ===
+[awq-w4a16] throughput: 35.34 tok/s (16 conc, 1751 tokens in 49.54s)
+BENCH_RESULT {"model": "awq-w4a16", "ttft": ["1.71", "2.79", "4.70"], "decode_tps": ["74.06", "73.88", "72.41"], "throughput_16c": "35.34"}
+=== smoothquant-w8a8 ===
+[smoothquant-w8a8] === single-stream latency ===
+[smoothquant-w8a8] sample0 (~2k tok): TTFT=0.68s  decode=33.12 tok/s
+[smoothquant-w8a8] sample1 (~4k tok): TTFT=1.09s  decode=32.91 tok/s
+[smoothquant-w8a8] sample2 (~8k tok): TTFT=1.80s  decode=32.70 tok/s
+[smoothquant-w8a8] === throughput (16 concurrent) ===
+[smoothquant-w8a8] throughput: 72.50 tok/s (16 conc, 1851 tokens in 25.53s)
+BENCH_RESULT {"model": "smoothquant-w8a8", "ttft": ["0.68", "1.09", "1.80"], "decode_tps": ["33.12", "32.91", "32.70"], "throughput_16c": "72.50"}
+=== bf16-baseline ===
+[bf16-baseline] === single-stream latency ===
+[bf16-baseline] sample0 (~2k tok): TTFT=1.16s  decode=50.32 tok/s
+[bf16-baseline] sample1 (~4k tok): TTFT=1.84s  decode=49.36 tok/s
+[bf16-baseline] sample2 (~8k tok): TTFT=3.09s  decode=49.14 tok/s
+[bf16-baseline] === throughput (16 concurrent) ===
+[bf16-baseline] throughput: 44.51 tok/s (16 conc, 1552 tokens in 34.87s)
+BENCH_RESULT {"model": "bf16-baseline", "ttft": ["1.16", "1.84", "3.09"], "decode_tps": ["50.32", "49.36", "49.14"], "throughput_16c": "44.51"}
+BENCH ALL DONE

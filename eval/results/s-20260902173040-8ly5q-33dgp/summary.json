@@ -1,0 +1,26 @@
+{
+ "target": "http://s-20260902173040-8ly5q-33dgp.kscn-tj5-cloudml.xiaomi.srv",
+ "samples": 360,
+ "wall_s": 329.9,
+ "parse_ok_rate": 99.17,
+ "action_exact_match_rate": 57.22,
+ "action_type_match_rate": 82.78,
+ "gt_match_rate_ref": 6.94,
+ "coord_dist_median": 0.0,
+ "coord_dist_count": 270,
+ "errors": 0,
+ "per_platform": {
+  "win": {
+   "n": 120,
+   "exact_rate": 50.83
+  },
+  "mac": {
+   "n": 120,
+   "exact_rate": 55.83
+  },
+  "ubuntu": {
+   "n": 120,
+   "exact_rate": 65.0
+  }
+ }
+}

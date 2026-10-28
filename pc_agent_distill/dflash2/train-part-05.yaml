@@ -1,0 +1,89 @@
+# Auto-generated shard-chain yaml for GUI-Owl-32B DFlash2
+model:
+  target_model_path: /mnt/lisiqi23/internship/zhangyikang/uiagent/GUI-Owl-1.5-32B-Instruct/
+  draft_model_config: /root/SpecForge-main/SpecForge-main/configs/gui-owl-1.5-32b-dflash2.json
+  target_backend: sglang
+  input_modality: vlm
+  trust_remote_code: true
+  embedding_key: model.language_model.embed_tokens.weight
+  lm_head_key: lm_head.weight
+  torch_dtype: bfloat16
+  mask_token_id: 151669
+  draft_checkpoint_path: /mnt/lisiqi23/internship/zhangyikang/uiagent/pc_agent_distill/dflash2/train-part-04/guiowl32b-dflash2-part-04-step3242
+  sglang_context_length: 8250
+  sglang_mem_fraction_static: 0.85
+
+data:
+  train_data_path: /mnt/lisiqi23/internship/zhangyikang/uiagent/pc_agent_distill/dflash2/parts/part-05.jsonl
+  max_length: 8192
+  cache_dir: /mnt/lisiqi23/internship/zhangyikang/uiagent/pc_agent_distill/dflash2/cache
+  build_dataset_num_proc: 16
+  dataloader_num_workers: 8
+
+training:
+  strategy: dflash
+  num_epochs: 1
+  batch_size: 1
+  accumulation_steps: 4
+  learning_rate: 0.0006
+  warmup_ratio: 0.04
+  max_grad_norm: 1.0
+  attention_backend: flex_attention
+  num_anchors: 512
+  loss_decay_gamma: 7.0
+  lk_loss_type: lambda
+  loss_type: dpace
+  objective_chunk_blocks: 128
+  dflash2_selector_loss_alpha: 1.0
+  dflash2_selector_warmup_ratio: 0.0005
+  dflash2_selector_ramp_ratio: 0.0005
+  save_interval: 500
+  log_interval: 1
+  dist_timeout: 30
+  seed: 42
+
+tracking:
+  report_to: tensorboard
+
+runtime:
+  producer_lease: 8
+  producer_concurrency: 2
+  in_flight_high_watermark: 128
+  in_flight_low_watermark: 96
+
+run_id: guiowl32b-dflash2-part-05
+output_dir: /mnt/lisiqi23/internship/zhangyikang/uiagent/pc_agent_distill/dflash2/train-part-05
+
+deployment:
+  mode: disaggregated
+  trainer:
+    nnodes: 1
+    nproc_per_node: 4
+  disaggregated:
+    control_dir: /root/specforge_state/train-part-05/control-r3
+    consumer_state_dir: /root/specforge_state/train-part-05/consumer-state-r3
+    backend: mooncake
+    managed_local:
+      trainer_cuda_visible_devices: ["4", "5", "6", "7"]
+      mooncake:
+        protocol: tcp
+        global_segment_size_bytes: 68719476768
+        local_buffer_size_bytes: 1073741824
+        default_kv_lease_ttl_ms: 120000
+      capture_servers:
+        - port: 30000
+          cuda_visible_devices: ["0"]
+          tp_size: 1
+          mem_fraction_static: 0.85
+        - port: 30001
+          cuda_visible_devices: ["1"]
+          tp_size: 1
+          mem_fraction_static: 0.85
+        - port: 30002
+          cuda_visible_devices: ["2"]
+          tp_size: 1
+          mem_fraction_static: 0.85
+        - port: 30003
+          cuda_visible_devices: ["3"]
+          tp_size: 1
+          mem_fraction_static: 0.85

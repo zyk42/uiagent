@@ -1,0 +1,5 @@
+{
+  "status": "not_evaluated_broken_output",
+  "reason": "同系列 skip3 实测输出全为乱码('!!!!!'), 判断为镜像混合精度(bf16 跳过层 + nvfp4)路径不兼容; 经决策未部署",
+  "date": "2026-10-27"
+}

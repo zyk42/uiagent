@@ -1,0 +1,7 @@
+{
+  "model": "fp8-w8a8-vllm",
+  "status": "unusable_on_vllm",
+  "reason": "vllm 镜像(3050749-vllm-nvfp4-llmcompressor)在 RTX 5090 上 fp8 路径严重退化: RPS1 档 TTFT 均值 110s / E2E 267s(sglang 栈同模型 0.53s/4.7s)。用户决策: 丢弃",
+  "partial_data": "rps1 档已采集(60 条全成功但极慢), 未继续",
+  "date": "2026-10-27"
+}

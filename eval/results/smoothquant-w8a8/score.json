@@ -1,0 +1,6 @@
+{
+  "model": "smoothquant-w8a8",
+  "status": "not_deployable",
+  "reason": "sglang 0.5.20-dflash2 镜像的 int8_scaled_mm 内核未实现 sm120 (RTX 5090) 支持, CUDA graph 捕获阶段崩溃: 'No implemented int8_scaled_mm for current compute capability'",
+  "date": "2026-10-21"
+}

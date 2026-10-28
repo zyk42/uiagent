@@ -1,0 +1,158 @@
+[
+ {
+  "deployment": "awq-w4a16-vllm",
+  "rps_target": 1,
+  "sent": 60,
+  "ok": 31,
+  "failed": 29,
+  "wall_s": 337.35,
+  "achieved_rps": 0.178,
+  "output_tps": 11.1,
+  "input_tps": 350.0,
+  "ttft": {
+   "mean": 188.1516,
+   "p50": 192.8078,
+   "p90": 246.6351,
+   "p95": 252.021,
+   "max": 261.4019
+  },
+  "e2e": {
+   "mean": 288.5895,
+   "p50": 288.3998,
+   "p90": 298.4982,
+   "p95": 298.5181,
+   "max": 299.6495
+  },
+  "tpot": {
+   "mean": 0.8721,
+   "p50": 0.7806,
+   "p90": 1.4399,
+   "p95": 1.6056,
+   "max": 2.8917
+  },
+  "errors": [
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: "
+  ]
+ },
+ {
+  "deployment": "awq-w4a16-vllm",
+  "rps_target": 2,
+  "sent": 120,
+  "ok": 61,
+  "failed": 59,
+  "wall_s": 358.05,
+  "achieved_rps": 0.335,
+  "output_tps": 19.8,
+  "input_tps": 642.6,
+  "ttft": {
+   "mean": 33.5521,
+   "p50": 0.7192,
+   "p90": 243.2992,
+   "p95": 277.8776,
+   "max": 292.1668
+  },
+  "e2e": {
+   "mean": 179.2882,
+   "p50": 191.9462,
+   "p90": 297.6024,
+   "p95": 299.0782,
+   "max": 300.0821
+  },
+  "tpot": {
+   "mean": 1.2956,
+   "p50": 1.2629,
+   "p90": 2.4797,
+   "p95": 2.5405,
+   "max": 2.6174
+  },
+  "errors": [
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: "
+  ]
+ },
+ {
+  "deployment": "awq-w4a16-vllm",
+  "rps_target": 3,
+  "sent": 180,
+  "ok": 1,
+  "failed": 179,
+  "wall_s": 360.04,
+  "achieved_rps": 0.5,
+  "output_tps": 0.3,
+  "input_tps": 10.0,
+  "ttft": {
+   "mean": 4.4171,
+   "p50": 4.4171,
+   "p90": 4.4171,
+   "p95": 4.4171,
+   "max": 4.4171
+  },
+  "e2e": {
+   "mean": 297.2078,
+   "p50": 297.2078,
+   "p90": 297.2078,
+   "p95": 297.2078,
+   "max": 297.2078
+  },
+  "tpot": {
+   "mean": 2.6862,
+   "p50": 2.6862,
+   "p90": 2.6862,
+   "p95": 2.6862,
+   "max": 2.6862
+  },
+  "errors": [
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: "
+  ]
+ },
+ {
+  "deployment": "awq-w4a16-vllm",
+  "rps_target": 4,
+  "sent": 240,
+  "ok": 64,
+  "failed": 176,
+  "wall_s": 359.92,
+  "achieved_rps": 0.667,
+  "output_tps": 21.4,
+  "input_tps": 673.4,
+  "ttft": {
+   "mean": 2.6645,
+   "p50": 1.4628,
+   "p90": 3.0443,
+   "p95": 3.3177,
+   "max": 48.8424
+  },
+  "e2e": {
+   "mean": 124.9772,
+   "p50": 115.3622,
+   "p90": 221.7701,
+   "p95": 242.2596,
+   "max": 295.949
+  },
+  "tpot": {
+   "mean": 1.0038,
+   "p50": 0.9624,
+   "p90": 1.45,
+   "p95": 1.6285,
+   "max": 2.7933
+  },
+  "errors": [
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: "
+  ]
+ }
+]

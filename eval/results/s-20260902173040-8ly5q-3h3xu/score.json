@@ -1,0 +1,29 @@
+{
+ "samples": 356,
+ "ref_unparseable_skipped": 5,
+ "parse_ok_rate": 0.0,
+ "L0_exact": 0.0,
+ "L1_equivalent": 0.0,
+ "L2_decision": 0.0,
+ "L3_drift": 100.0,
+ "coord_dist_median": null,
+ "coord_dist_p90": null,
+ "verb_drift_top": [],
+ "per_platform": {
+  "win": {
+   "n": 119,
+   "L0": 0.0,
+   "L1_cum": 0.0
+  },
+  "mac": {
+   "n": 118,
+   "L0": 0.0,
+   "L1_cum": 0.0
+  },
+  "ubuntu": {
+   "n": 119,
+   "L0": 0.0,
+   "L1_cum": 0.0
+  }
+ }
+}

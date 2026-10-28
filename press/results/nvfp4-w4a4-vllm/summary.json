@@ -1,0 +1,146 @@
+[
+ {
+  "deployment": "nvfp4-w4a4-vllm",
+  "rps_target": 1,
+  "sent": 60,
+  "ok": 60,
+  "failed": 0,
+  "wall_s": 224.46,
+  "achieved_rps": 0.267,
+  "output_tps": 33.3,
+  "input_tps": 1010.5,
+  "ttft": {
+   "mean": 70.1204,
+   "p50": 67.7134,
+   "p90": 133.313,
+   "p95": 141.6316,
+   "max": 151.1981
+  },
+  "e2e": {
+   "mean": 188.93,
+   "p50": 188.0651,
+   "p90": 207.7899,
+   "p95": 209.6537,
+   "max": 212.4623
+  },
+  "tpot": {
+   "mean": 0.9871,
+   "p50": 0.9704,
+   "p90": 1.6689,
+   "p95": 1.8157,
+   "max": 1.9239
+  },
+  "errors": []
+ },
+ {
+  "deployment": "nvfp4-w4a4-vllm",
+  "rps_target": 2,
+  "sent": 120,
+  "ok": 120,
+  "failed": 0,
+  "wall_s": 292.8,
+  "achieved_rps": 0.41,
+  "output_tps": 51.0,
+  "input_tps": 1552.0,
+  "ttft": {
+   "mean": 54.9823,
+   "p50": 6.2647,
+   "p90": 172.9527,
+   "p95": 197.1073,
+   "max": 220.9226
+  },
+  "e2e": {
+   "mean": 177.7674,
+   "p50": 233.7956,
+   "p90": 249.6855,
+   "p95": 252.0145,
+   "max": 262.5447
+  },
+  "tpot": {
+   "mean": 0.9951,
+   "p50": 1.036,
+   "p90": 1.8136,
+   "p95": 1.9658,
+   "max": 2.018
+  },
+  "errors": []
+ },
+ {
+  "deployment": "nvfp4-w4a4-vllm",
+  "rps_target": 3,
+  "sent": 180,
+  "ok": 9,
+  "failed": 171,
+  "wall_s": 360.26,
+  "achieved_rps": 0.5,
+  "output_tps": 2.8,
+  "input_tps": 92.6,
+  "ttft": {
+   "mean": 29.1122,
+   "p50": 25.564,
+   "p90": 51.6962,
+   "p95": 73.445,
+   "max": 73.445
+  },
+  "e2e": {
+   "mean": 276.5177,
+   "p50": 272.5723,
+   "p90": 294.6169,
+   "p95": 294.6928,
+   "max": 294.6928
+  },
+  "tpot": {
+   "mean": 2.27,
+   "p50": 2.2752,
+   "p90": 2.3025,
+   "p95": 2.3281,
+   "max": 2.3281
+  },
+  "errors": [
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: "
+  ]
+ },
+ {
+  "deployment": "nvfp4-w4a4-vllm",
+  "rps_target": 4,
+  "sent": 240,
+  "ok": 18,
+  "failed": 222,
+  "wall_s": 359.92,
+  "achieved_rps": 0.667,
+  "output_tps": 5.4,
+  "input_tps": 185.9,
+  "ttft": {
+   "mean": 49.7551,
+   "p50": 38.1444,
+   "p90": 97.8845,
+   "p95": 115.287,
+   "max": 120.4207
+  },
+  "e2e": {
+   "mean": 268.2398,
+   "p50": 267.2492,
+   "p90": 288.2515,
+   "p95": 296.8085,
+   "max": 296.9536
+  },
+  "tpot": {
+   "mean": 2.0277,
+   "p50": 2.0337,
+   "p90": 2.0951,
+   "p95": 2.0957,
+   "max": 2.0998
+  },
+  "errors": [
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: ",
+   "TimeoutError: "
+  ]
+ }
+]

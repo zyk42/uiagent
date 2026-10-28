@@ -1,0 +1,6 @@
+{
+  "model": "smoothquant-w8a8-vllm",
+  "status": "dropped",
+  "reason": "sglang 栈 int8 内核不支持 sm120; vllm 栈用户决策不再尝试, 该方案双栈出局",
+  "date": "2026-10-27"
+}
