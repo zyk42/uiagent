@@ -39,3 +39,18 @@
 1. **vllm dp=4 起不来**: 4 个 dp1tp4 均 crash loop(2026-10-27), pod 日志需控制台查看
 2. **vllm 4bit tp4 四组数字异常低**(5~21 tok/s, 大量请求超时), 与同镜像 skip 系列(240+)矛盾, 疑似故障节点; 结论使用前需复测
 3. 服务单服务部署数上限 10, 自动化循环记得删除前 `wait --for stopped` 并校验删除成功
+
+## vLLM + DFlash2 投机解码(第三轮)
+
+命名: `<模型>-spec-vllm`(draft: `pc_agent_distill/dflash2/draft-part07-final-hf`,16 tokens)。全部 9 组有效:
+
+| 目录 | RPS4 吞吐 | RPS1 E2E |
+|---|---|---|
+| bf16-spec-vllm | 184 tok/s | 1.79s |
+| gptq-w4a16-spec-vllm | 190 | 1.32s |
+| awq-w4a16-spec-vllm | 188 | 1.31s |
+| nvfp4-w4a4-spec-vllm | **302** | 0.94s |
+| gptq-nvfp4-spec-vllm | 300 | **0.86s** |
+| skip3/6/12/24-spec-vllm | ~280 / 288 / 272 / 248 | 0.94~1.18s |
+
+(skip3 首轮部署失败后于 10-28 重试成功)
